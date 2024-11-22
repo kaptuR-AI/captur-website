@@ -52,12 +52,33 @@ const components: { title: string; href: string; description: string }[] = [
       },
 ]
 
+const communityitems: { title: string; href: string; description: string }[] = [
+    {
+        title: "Blogs",
+        href: "/",
+        description:
+          "Discover our content to know more about us.",
+      },
+      {
+        title: "Events",
+        href: "/",
+        description:
+          "Discover our Upcoming webinars.",
+      },
+      {
+        title: "Support",
+        href: "/",
+        description:
+          "Get in touch if you need any help",
+      }
+]
+
 export function Navigation() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-white text-black">Solutions</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="bg-black text-white">Solutions</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -89,7 +110,7 @@ export function Navigation() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-white text-black">Use Cases</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="bg-black text-white">Use Cases</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -104,12 +125,21 @@ export function Navigation() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem className="bg-white text-black rounded-md">
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Support
-            </NavigationMenuLink>
-          </Link>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="bg-black text-white">Community</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              {communityitems.map((component) => (
+                <ListItem
+                  key={component.title}
+                  title={component.title}
+                  href={component.href}
+                >
+                  {component.description}
+                </ListItem>
+              ))}
+            </ul>
+          </NavigationMenuContent>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
