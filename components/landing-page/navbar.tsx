@@ -1,11 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Navigation } from "./navigation";
-import { Menu, MoveUpRight, X } from "lucide-react";
-import { Button } from "../ui/button";
+import { Menu, X } from "lucide-react";
+import { WaitlistButton } from "./waiting-list";
 
 
 export function Navbar() {
@@ -21,7 +20,7 @@ export function Navbar() {
               
               {/* <Image src={"/logo.png"} width={50} height={50} alt="Logo" /> */}
               <span className="text-2xl font-serif font-bold text-white">
-                Captur
+                CaptuR
                 </span>
               
             </div>
@@ -33,10 +32,7 @@ export function Navbar() {
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-          <Button className="flex items-center gap-2 bg-white text-black border group" variant={'outline'}>
-            Join Waitlist
-            <MoveUpRight className="w-4 h-4  text-blue transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
-            </Button>
+         <WaitlistButton />
           </div>
 
           <div className="-mr-2 flex md:hidden">
@@ -59,7 +55,7 @@ export function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden border bg-white" id="mobile-menu">
+        <div className="md:hidden border bg-black text-white p-2" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               href="#"
@@ -80,10 +76,7 @@ export function Navbar() {
               Community
             </Link>
             
-            <Button className="flex items-center gap-2 border group" variant={'outline'}>
-            Join Waitlist
-            <MoveUpRight className="w-4 h-4 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
-            </Button>
+            <WaitlistButton />
             </div>        
         </div>
       )}
