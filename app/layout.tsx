@@ -24,11 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scrollbar scrollbar-thin">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white` }
-      ><main className="font-mono  flex flex-col  space-y-4" >{children} </main>
-        
+      ><main className="font-mono   flex flex-col  space-y-4" >{children} </main>
       </body>
     </html>
   );

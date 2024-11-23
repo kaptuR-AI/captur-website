@@ -29,7 +29,7 @@ export function WaitlistButton() {
         <DialogHeader>
           <DialogTitle>Joining our Waitlist</DialogTitle>
           <DialogDescription>
-             Click submit when you're done.
+             Click submit when you&apos;re done.
           </DialogDescription>
         </DialogHeader>
        
