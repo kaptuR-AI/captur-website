@@ -11,8 +11,8 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" backdrop-filter backdrop-blur-lg w-full z-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className=" backdrop-filter  backdrop-blur-lg w-full z-10">
+      <div className="max-w-7xl border-gray-500 border-b mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
           <Link href={'/'}>
