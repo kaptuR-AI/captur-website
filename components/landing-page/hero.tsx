@@ -11,14 +11,14 @@ export default function Hero() {
     <section className='grid lg:grid-cols-2 sm:grid-col-1 max-w-7xl m-auto  mt-4'>
     <div className='flex flex-col m-auto p-4'>
     <div className='p-4 space-y-4'>
-    <h1 className="text-6xl mb-4 font-bold">
+    <h1 className="text-6xl mb-4 text-blue-500 font-bold">
     Detect <br />
     </h1>
 
     <FlipWords words={words} /> <br />
 
     <p className="mt-4 text-lg leading-relaxed max-w-2xl">
-    Captur's multi-model verification platform helps institutions authenticate digital identities, detect synthetic media, and prevent fraud at scale.
+    Captur&apos;s multi-model verification platform helps institutions authenticate digital identities, detect synthetic media, and prevent fraud at scale.
     </p>
     </div>
     <WaitlistButton />
