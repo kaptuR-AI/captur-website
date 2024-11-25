@@ -3,7 +3,7 @@ import { WaitlistButton } from './waiting-list';
 
 export default function ExtraSection() {
   return (
-    <section className="bg-[#171717] text-white min-h-[400px] w-full py-16">
+    <section className="bg-[#171717] text-white min-h-[400px] flex items-center w-full py-16 border-y">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Left column */}
@@ -24,7 +24,7 @@ export default function ExtraSection() {
               —it is a fraud prevention and media
               authenticity command center
             </p>
-            
+
             <div className="w-full max-w-md">
               <WaitlistButton />
             </div>
