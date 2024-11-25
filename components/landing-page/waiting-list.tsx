@@ -1,6 +1,4 @@
 'use client'
-
-import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogContent,
@@ -10,22 +8,22 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import { MoveUpRight } from "lucide-react"
+import { Button } from "../ui/button"
+import WaitlistForm from "./waitlist-form"
 
 export function WaitlistButton() {  
   return (
     <Dialog>
       <DialogTrigger asChild>
-      <div className='flex ml-3 mt-2'>
-       <Button className="flex items-center gap-2 hover:bg-blue-400 bg-white text-black border group" variant={'outline'}>
+      <div className='flex mt-2'>
+       <Button className="flex p-4 items-center gap-2 hover:bg-blue-400 bg-white text-black border group" variant={'outline'}>
             Join Our Waitlist
             <MoveUpRight className="w-4 h-4  text-blue transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
       </Button>
       </div>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] bg-black text-white">
+      <DialogContent className="sm:m-2  bg-white text-black">
         <DialogHeader>
           <DialogTitle>Joining our Waitlist</DialogTitle>
           <DialogDescription>
@@ -33,34 +31,13 @@ export function WaitlistButton() {
           </DialogDescription>
         </DialogHeader>
        
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
-              Name
-            </Label>
-            <Input
-              id="name"
-              defaultValue="Pedro Duarte"
-              className="col-span-3"
-            />
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
-              Email
-            </Label>
-            <Input
-              id="username"
-              defaultValue="@peduarte"
-              className="col-span-3"
-            />
-          </div>
-        </div>
+        <WaitlistForm />
        
         <DialogFooter>
-          <Button type="submit">Submit</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>
+
   )
 }
 

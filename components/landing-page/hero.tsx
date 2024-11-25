@@ -4,9 +4,7 @@ import { FlipWords } from '../ui/flip-words'
 import { WaitlistButton } from './waiting-list';
 
 export default function Hero() {
-
     const words = ["Deepfakes","Generated Text", "Voice Spoofing", "Disinformation", "Fraud"];
-
   return (
     <section className='grid lg:grid-cols-2 sm:grid-col-1 max-w-7xl m-auto mt-4 min-h-screen'>
       <div className='flex flex-col m-auto p-4'>
