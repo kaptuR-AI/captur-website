@@ -88,7 +88,7 @@ export function Navigation() {
                   >
                     {/* <Icons.logo className="h-6 w-6" /> */}
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      Captur AI
+                      DeepTrack
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                     Use AI to detect deepfakes. Captur is modal agnostic
