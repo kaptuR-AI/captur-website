@@ -31,7 +31,7 @@ export const POST = async (request: Request) => {
     }
 
     // 1.1 Save to database
-  const newuser =  await db.waitlist.create({
+    await db.waitlist.create({
       data: {
         name: name,
         email: email,

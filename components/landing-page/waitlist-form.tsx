@@ -34,7 +34,7 @@ export default function WaitlistForm() {
     event.preventDefault()
     try {
       const formData = new FormData(event.currentTarget)
-    const res = await fetch('/api/add-to-waitlist', {
+    await fetch('/api/add-to-waitlist', {
         method: 'POST',
         body: formData,
       })
