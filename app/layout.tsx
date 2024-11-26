@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "CaptuR",
+  title: "DeepTrack",
   description: "AI deepfake detector",
 };
 

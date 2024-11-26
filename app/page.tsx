@@ -9,7 +9,7 @@ import TestimonialSection from "@/components/landing-page/testimonialSection";
 
 export default function Home() {
   return (
-    <>
+    <div className="space-y-6">
       <Navbar />
       <Hero />
       <StepsSection />
@@ -18,6 +18,6 @@ export default function Home() {
       <TestimonialSection />
       <ExtraSection />
       <Footer />
-    </>
+    </div>
   );
 }

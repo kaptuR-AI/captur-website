@@ -8,7 +8,7 @@ export default function ExtraSection() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Left column */}
           <div className="space-y-4">
-            <h2 className="text-5xl md:text-6xl font-bold leading-tight">
+            <h2 className="text-5xl md:text-5xl font-bold leading-tight">
               A Holistic
               <br />
               Authenticity
