@@ -34,15 +34,15 @@ export default function WaitlistForm() {
     event.preventDefault()
     try {
       const formData = new FormData(event.currentTarget)
-     await fetch('/api/add-to-waitlist', {
+    const res = await fetch('/api/add-to-waitlist', {
         method: 'POST',
         body: formData,
       })
-      
-      toast.success('Added to our Waitlist')
+      toast.success('Hooray! You are on our Waitlist')
  
     } catch (error) {
       console.error(error)
+      toast.error('Error adding to Waitlist')
     } 
   }
 

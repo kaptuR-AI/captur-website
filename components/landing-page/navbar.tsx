@@ -6,23 +6,19 @@ import { Navigation } from "./navigation";
 import { Menu, X } from "lucide-react";
 import { WaitlistButton } from "./waiting-list";
 
-
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <nav className=" backdrop-filter  backdrop-blur-lg w-full z-10">
+    <nav className="backdrop-filter  backdrop-blur-lg w-full z-10">
       <div className="max-w-7xl border-gray-500 border-b mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
           <Link href={'/'}>
             <div className="flex flex-row items-center space-x-2 mb-2 mt-2">
-              
               {/* <Image src={"/logo.png"} width={50} height={50} alt="Logo" /> */}
               <span className="text-2xl font-serif font-bold text-white">
-                CaptuR
-                </span>
-              
+              DEEPTRACK
+              </span>
             </div>
             </Link>
           </div>

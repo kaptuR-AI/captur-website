@@ -5,8 +5,8 @@ export const POST = async (request: Request) => {
   try {
     // Get the form data from the request
     const formData = await request.formData();
-    const name = formData.get('name');
-    const email = formData.get('email');
+    const name = formData.get('name')?.toString();
+    const email = formData.get('email')?.toString();
 
     // Validate the data
     if (!name || !email) {
@@ -15,22 +15,33 @@ export const POST = async (request: Request) => {
         { status: 400 }
       );
     }
+    // 1.0 Check if the email already exists
+    const existingUser = await db.waitlist.findMany({
+      where: {
+        email: email
+      }
+    });
 
-    // 1.0 check if the email already exists  (if exists - return message else add to database)
+
+    if (existingUser.length !== 0) {
+      return NextResponse.json(
+        { success: false, message: 'This email is already registered on the waitlist' },
+        { status: 400 }
+      );
+    }
 
     // 1.1 Save to database
-  const newdata =  await db.waitlist.create({
-        data: {
-            name: name,
-            email: email
-        }
-    })
+  const newuser =  await db.waitlist.create({
+      data: {
+        name: name,
+        email: email,
+        updatedAt: new Date()
+      }
+    });
 
-    
- 
     // 2. Send confirmation email
-    // 3. Add to mailing list
     
+    // 3. Add to mailing list
 
     return NextResponse.json(
       { 
