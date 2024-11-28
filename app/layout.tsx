@@ -20,6 +20,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/logos/deeptrack-high-resolution-logo-white-transparent.png",
+  },
   title: "DeepTrack",
   description: "AI deepfake detector",
 };
