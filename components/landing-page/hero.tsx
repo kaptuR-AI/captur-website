@@ -16,8 +16,8 @@ export default function Hero() {
           <p className="mt-4 text-lg leading-relaxed max-w-2xl">
           Empower your business, safeguard your government, and defend your media with Africa’s leading deepfake detection platform.
           </p>
+          <WaitlistButton />
         </div>
-        <WaitlistButton />
       </div>
       <div className='p-6 lg:mt-12'>
         <HeroSvg />
