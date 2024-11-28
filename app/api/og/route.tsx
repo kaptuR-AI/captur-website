@@ -9,14 +9,14 @@ export async function GET(request: Request) {
         const hasTitle = searchParams.has("title")
 
         const title = hasTitle ? searchParams.get("title")?.slice(0,100): "DeepTrack"
-        
+        const fontData = await fetch(new URL("../fonts/GeistMonoVF.woff", import.meta.url)).then((res) => res.arrayBuffer())
         return new ImageResponse( 
             (
                 <div tw="flex flex-col w-full h-full items-center justify-center bg-black text-white">
                 <div tw="flex flex-col bg-black  md:flex-row w-full py-12 px-4 md:items-center justify-between p-8">
                 
                 <h2 tw="text-4xl sm:text-4xl font-bold tracking-tight text-white text-center">
-                        <span>DeepTrack </span>
+                        <span>{title} </span>
                       </h2>
                  </div>
                   <div tw="bg-gray-50 flex w-full">
@@ -41,10 +41,15 @@ export async function GET(request: Request) {
                   </div>
                 </div>
             ),
-            
+            {
+              fonts: [
+                {name: "GeistMono", data: fontData, style: "normal"}
+              ]
+            }
           );
     }
- catch(e: any){
- return new Response("Failed to Generate Image", {status: 500})
- }
+    catch (e: unknown) {
+      const errorMessage = e instanceof Error ? e.message : String(e);
+      return new Response(`${errorMessage} - Failed to Generate Image`, { status: 500 });
+  }
 }
