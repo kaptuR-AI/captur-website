@@ -8,7 +8,7 @@ export default function ExtraSection() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Left column */}
           <div className="space-y-4">
-            <h2 className="text-5xl md:text-5xl font-bold leading-tight">
+            <h2  data-aos="fade-up" className="text-5xl md:text-5xl font-bold leading-tight">
               A Holistic
               <br />
               Authenticity
@@ -20,7 +20,7 @@ export default function ExtraSection() {
           {/* Right column */}
           <div className="flex flex-col space-y-8">
             <p className="text-2xl text-gray-300 leading-relaxed">
-              The CaptuR AI application is not just a tool
+              The DeepTrack AI application is not just a tool
               —it is a fraud prevention and media
               authenticity command center
             </p>

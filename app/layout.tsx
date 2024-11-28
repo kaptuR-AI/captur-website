@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from 'sonner'
+import { AOSInit } from "@/components/aos";
     
 
 const geistSans = localFont({
@@ -9,6 +10,7 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -27,9 +29,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scrollbar scrollbar-thin">
+       <AOSInit />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white` }
-      ><main className="font-mono   flex flex-col  space-y-4" >{children} </main>
+      >
+        {/* <meta property="og:title" content="DeepTrack" />
+        <meta property="og:type" content="video.movie" />
+        <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+        <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" /> */}
+        <main className="font-mono  flex flex-col  space-y-4" >{children} </main>
       <Toaster />
       </body>
     </html>
