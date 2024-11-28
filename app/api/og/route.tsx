@@ -9,7 +9,7 @@ export async function GET(request: Request) {
         const hasTitle = searchParams.has("title")
 
         const title = hasTitle ? searchParams.get("title")?.slice(0,100): "DeepTrack"
-        const fontData = await fetch(new URL("../fonts/GeistMonoVF.woff", import.meta.url)).then((res) => res.arrayBuffer())
+        // const fontData = await fetch(new URL("../fonts/GeistMonoVF.woff", import.meta.url)).then((res) => res.arrayBuffer())
         return new ImageResponse( 
             (
                 <div tw="flex flex-col w-full h-full items-center justify-center bg-black text-white">
@@ -40,12 +40,7 @@ export async function GET(request: Request) {
                     </div>
                   </div>
                 </div>
-            ),
-            {
-              fonts: [
-                {name: "GeistMono", data: fontData, style: "normal"}
-              ]
-            }
+            )
           );
     }
     catch (e: unknown) {
