@@ -9,7 +9,7 @@ export default function CookieBanner() {
   const [cookieConsent, setCookieConsent] = useState(false);
 
   useEffect(() => {
-    const storedCookieConsent = getLocalStorage("cookie_consent", null);
+    const storedCookieConsent = getLocalStorage("cookie_consent", false);
     setCookieConsent(storedCookieConsent);
   }, [setCookieConsent]);
 
