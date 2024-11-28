@@ -25,18 +25,18 @@ export default function CookieBanner() {
 
   return (
     <div
-      className={`fixed bottom-3 left-0 right-0 bg-black text-white rounded-lg shadow-md p-3 md:p-4 z-50
+      className={`fixed bottom-3 left-0 right-0 bg-white mb-2 text-black space-y-4 rounded-lg shadow-md p-2 m-2 md:p-4 z-50
       ${
         cookieConsent != null ? "hidden" : "flex"
       } justify-center flex-col items-center w-full md:w-[28rem] max-w-xl mx-2 md:mx-auto`}>
-      <div className='text-center'>
+      <div className='text-center '>
         <Link href='/'>
-          <p className='text-gray-300'>
+          <p className='text-black'>
           We use cookies at DeepTrack to enhance your browsing experience on our page. By continuing to explore our site, you agree to our use of cookies.
           </p>
         </Link>
       </div>
-      <div className=''>
+      <div className='mt-2 mb-2'>
         <button
           className='px-4 py-2 mx-2 text-gray-300 rounded-md border border-gray-900 hover:bg-gray-900 hover:text-white'
           onClick={() => setCookieConsent(false)}>
