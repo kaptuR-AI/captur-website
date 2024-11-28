@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Navigation } from "./navigation";
 import { Menu, X } from "lucide-react";
 import { WaitlistButton } from "./waiting-list";
+import Image from "next/image";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,10 +16,10 @@ export function Navbar() {
           <div className="flex items-center">
           <Link href={'/'}>
             <div className="flex flex-row items-center space-x-2 mb-2 mt-2">
-              {/* <Image src={"/logo.png"} width={50} height={50} alt="Logo" /> */}
-              <span className="text-2xl font-serif font-bold text-white">
+              <Image src={"/logos/deeptrack-high-resolution-logo-white.png"} width={200} height={50} alt="Logo" />
+              {/* <span className="text-2xl font-serif font-bold text-white">
               DEEPTRACK
-              </span>
+              </span> */}
             </div>
             </Link>
           </div>

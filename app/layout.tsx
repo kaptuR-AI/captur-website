@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from 'sonner'
 import { AOSInit } from "@/components/aos";
+import GoogleAnalytics from "@/components/google-analytics";
+import CookieBanner from "@/components/cookie-banner";
     
 
 const geistSans = localFont({
@@ -30,15 +32,18 @@ export default function RootLayout({
   return (
     <html lang="en" className="scrollbar scrollbar-thin">
        <AOSInit />
+       <head>
+        <link rel="icon" type="image/png" href="/logos/deeptrack-high-resolution-logo-white" sizes="32x32" />
+       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white` }
       >
-        {/* <meta property="og:title" content="DeepTrack" />
-        <meta property="og:type" content="video.movie" />
-        <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
-        <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" /> */}
+        <GoogleAnalytics
+              GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID!}
+            />
         <main className="font-mono  flex flex-col  space-y-4" >{children} </main>
       <Toaster />
+      <CookieBanner />
       </body>
     </html>
   );

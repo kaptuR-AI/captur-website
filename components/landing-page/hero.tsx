@@ -14,7 +14,7 @@ export default function Hero() {
             <FlipWords words={words} />
           </div>
           <p className="mt-4 text-lg leading-relaxed max-w-2xl">
-            DeepTrack&apos;s multi-model verification platform helps institutions authenticate digital identities, detect synthetic media, and prevent fraud at scale.
+          Empower your business, safeguard your government, and defend your media with Africa’s leading deepfake detection platform.
           </p>
         </div>
         <WaitlistButton />
