@@ -3,11 +3,8 @@ import { ImageResponse } from 'next/og';
 export const runtime = "edge"
 export async function GET(request: Request) {
     try{
-
         const {searchParams} = new URL(request.url)
-
         const hasTitle = searchParams.has("title")
-
         const title = hasTitle ? searchParams.get("title")?.slice(0,100): "DeepTrack"
         // const fontData = await fetch(new URL("../fonts/GeistMonoVF.woff", import.meta.url)).then((res) => res.arrayBuffer())
         return new ImageResponse( 
@@ -20,8 +17,6 @@ export async function GET(request: Request) {
                       </h2>
                  </div>
                   <div tw="bg-gray-50 flex w-full">
-                
-                 
                 
                     <div tw="flex flex-col bg-black  md:flex-row w-full py-12 px-4 md:items-center justify-between p-8">
                    

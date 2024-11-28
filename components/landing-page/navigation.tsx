@@ -12,6 +12,7 @@ import {
   NavigationMenuTrigger
 } from "@/components/ui/navigation-menu"
 import Link from "next/link"
+import Image from "next/image"
 
 const components: { title: string; href: string; description: string }[] = [
     {
@@ -86,9 +87,9 @@ export function Navigation() {
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    {/* <Icons.logo className="h-6 w-6" /> */}
+                     
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      DeepTrack
+                    <Image src={"/logos/deeptrack-high-resolution-logo-black-transparent.png"} width={200} height={50} alt="Logo" />
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                     Use AI to detect deepfakes. DeepTrack is model agnostic
