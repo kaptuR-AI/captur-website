@@ -79,7 +79,7 @@ export function Navigation() {
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-black text-white">Solutions</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+            <ul className=" grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <Link
@@ -91,7 +91,7 @@ export function Navigation() {
                       DeepTrack
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                    Use AI to detect deepfakes. Captur is modal agnostic
+                    Use AI to detect deepfakes. DeepTrack is model agnostic
                     </p>
                   </Link>
                 </NavigationMenuLink>
@@ -103,13 +103,13 @@ export function Navigation() {
             Detect deepfakes and verify audio recordings with voice analysis technology.
             </ListItem>
             <ListItem href="/" title="Text Detection">
-            Identify AI-generated content and analyze writing patterns for authenticity.
+            Identify AI generated content and analyze writing patterns for authenticity.
             </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-black text-white">Use Cases</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="bg-black text-white ">Use Cases</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -127,7 +127,7 @@ export function Navigation() {
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-black text-white">Community</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {communityitems.map((component) => (
                 <ListItem
                   key={component.title}

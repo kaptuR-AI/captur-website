@@ -38,6 +38,12 @@ export default function WaitlistForm() {
         method: 'POST',
         body: formData,
       })
+
+      setFormData({
+        name: '',
+        email: ''
+      })
+      
       toast.success('Hooray! You are on our Waitlist')
  
     } catch (error) {

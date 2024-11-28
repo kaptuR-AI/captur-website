@@ -6,6 +6,19 @@ import StepsSection from "@/components/landing-page/stepsSection";
 import ImpactSection from "@/components/landing-page/impact-section";
 import BuiltForSection from "@/components/landing-page/builtForSection";
 import TestimonialSection from "@/components/landing-page/testimonialSection";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  openGraph: {
+    images: [
+      {
+        url: "https:deeptrack.io/api/og?title=DeepTrack",
+        width:1200,
+        height: 630,
+      alt: "DeepTrack"      }
+    ]
+  }
+}
 
 export default function Home() {
   return (
