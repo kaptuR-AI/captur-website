@@ -1,26 +1,72 @@
 import Image from "next/image";
+import { SolutionCard } from "../cards/solutionCard";
+
+const solutionData = [
+    {
+      id: 1,
+      title: 'Finance',
+      description: 'Strengthen your organization\'s defenses against financial threats. Seamlessly review flagged transactions and automate KYC (Know Your Customer) processes to detect fraud faster. Generate detailed compliance reports that meet regulatory standards, ensuring trust and security in your operations.',
+      learnMoreUrl: '#'
+    },
+    {
+      id: 2,
+      title: 'Government',
+      description: 'Lead the fight against misinformation with advanced tools to identify and thwart campaigns that threaten public discourse. Validate evidence with precision to support informed decision-making and uphold transparency.',
+      learnMoreUrl: '#'
+    },
+    // {
+    //   id: 3,
+    //   title: 'Media',
+    //   description: 'Maintain trust and credibility by effectively verifying user-generated content. Detect inaccuracies, uphold editorial standards, and ensure your platform remains a reliable source of information for your audience.',
+    //   learnMoreUrl: '#'
+    // }
+  ];
+
 const BuiltForSection = () => {
     return (
-        <section  className="py-10 md:w-3/4 md:mx-auto p-4">
-            <h2 className="text-center font-extrabold lg:text-4xl sm:text-2xl mb-20">Designed for Africa. Built for the World.</h2>
-           
-            <div className="flex gap-10 justify-center flex-wrap">
-          
-                <div  data-aos="fade-up" className="w-96 h-80 border rounded-lg flex items-center justify-center flex-col gap-4 p-10">
-                    <h3 className="font-bold text-xl text-center">Localized Language Detection</h3>
-                    <p className="text-sm text-gray-400 text-center">Built to recognize and analyse African languages and accents.</p>
-                </div>
-                <div  data-aos="fade-up" className="w-96 h-80 border rounded-lg flex items-center justify-center flex-col gap-4 p-10">
-                    <h3 className="font-bold text-xl text-center">Regulatory Alignment</h3>
-                    <p className="text-sm text-gray-400 text-center">GDPR, CCPA, and regional compliance ready.</p>
-                </div>
-                <div  data-aos="fade-up" className="w-96 h-80 border rounded-lg flex items-center justify-center flex-col gap-4 p-10">
-                    <h3 className="font-bold text-xl text-center">Scalable for Any Business</h3>
-                    <p className="text-sm text-gray-400 text-center">From startups to governments, our tools fit youe needs.</p>
-                </div>
-                <Image src="/Vector.svg" alt="Blue Lines" width={400} height={300} className=" absolute center-0 left-0 -z-10" />
-            </div>
-        </section>
+      <section className="py-10 md:w-3/4 md:mx-auto p-4">
+      <h2 className="text-center font-extrabold lg:text-4xl sm:text-2xl mb-20">
+        Engineered for What Matters Most.
+      </h2>
+      <div className="grid lg:grid-cols-2 sm:grid-col-1 gap-5">
+        {solutionData.map((solution) => (
+          <SolutionCard
+            key={solution.id}
+            title={solution.title}
+            description={solution.description}
+            learnMoreUrl={solution.learnMoreUrl}
+          />
+        ))}
+
+        <Image
+          src="/Vector.svg"
+          alt="Blue Lines"
+          width={400}
+          height={300}
+          className="absolute grayscale -z-10 left-0"
+        />
+      </div>
+
+      <div className="flex mt-5 shrink-0 m-auto">
+     
+          <SolutionCard
+            key={3}
+            title='Media'
+            description='Maintain trust and credibility by effectively verifying user-generated content. Detect inaccuracies, uphold editorial standards, and ensure your platform remains a reliable source of information for your audience.'
+            learnMoreUrl=''
+          />
+   
+
+        <Image
+          src="/Vector.svg"
+          alt="Blue Lines"
+          width={400}
+          height={300}
+          className="absolute grayscale -z-10 left-0"
+        />
+      </div>
+
+    </section>
     )
 }
 

@@ -21,7 +21,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   icons: {
-    icon: "/logos/deeptrack-high-resolution-logo-white-transparent.png",
+    icon: "/deeptrack-favicon.ico",
   },
   title: "DeepTrack",
   description: "AI deepfake detector",
@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scrollbar scrollbar-thin">
+    <html lang="en" className="scrollbar-thin">
        <AOSInit />
        <head>
         <link rel="icon" type="image/png" href="/logos/deeptrack-high-resolution-logo-white" sizes="32x32" />
