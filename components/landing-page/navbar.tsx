@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Navigation } from "./navigation";
 import { Menu, X } from "lucide-react";
-import { WaitlistButton } from "./waiting-list";
 import Image from "next/image";
 
 export function Navbar() {
@@ -28,9 +27,7 @@ export function Navbar() {
              <Navigation />
             </div>
           </div>
-          <div className="hidden md:flex items-center space-x-4">
-         <WaitlistButton />
-          </div>
+          
 
           <div className="-mr-2 flex md:hidden">
             <button
@@ -70,10 +67,16 @@ export function Navbar() {
               href="#"
               className="text-gray-600 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
             >
-              Community
+              Support
+            </Link>
+            <Link
+              href="#"
+              className="text-gray-600 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
+            >
+              Blog & Events
             </Link>
             
-            <WaitlistButton />
+            
             </div>        
         </div>
       )}
