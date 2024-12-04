@@ -5,8 +5,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Swiper core styles
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
-import TestimonialCard from "../cards/testimonialCard"; // Updated to match the correct path
+<<<<<<< HEAD
+import { Navigation, Pagination } from 'swiper/modules';
+import TestimonialCard from "../cards/testimonial-card"; // Updated to match the correct path
+=======
+import { Navigation, Pagination } from 'swiper/modules'
+import TestimonialCard from "../cards/testimonial-card";
+>>>>>>> origin/task/2/testimonials-swiper-update
 
 export const dummyTestimonials = [
   {
@@ -28,7 +33,6 @@ export const dummyTestimonials = [
     role: "COO, Fintech Startup",
   },
 ];
-
 const TestimonialSection = () => {
   return (
     <section className="p-4">
@@ -66,3 +70,4 @@ const TestimonialSection = () => {
 };
 
 export default TestimonialSection;
+
