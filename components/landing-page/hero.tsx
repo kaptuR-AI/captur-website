@@ -6,7 +6,7 @@ import { WaitlistButton } from './waiting-list';
 export default function Hero() {
     const words = ["Deepfakes","Generated Text", "Voice Spoofing", "Disinformation", "Fraud"];
   return (
-    <section className='grid lg:grid-cols-2 sm:grid-col-1 max-w-7xl m-auto mt-4   min-h-[75vh]'>
+    <section className='grid lg:grid-cols-2 sm:grid-col-1 max-w-7xl m-auto mt-4 z-0   min-h-[75vh]'>
       <div className='flex flex-col m-auto p-4'>
         <div className='p-4 space-y-4'>
           <div className="flex items-left flex-col gap-3">

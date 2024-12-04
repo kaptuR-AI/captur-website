@@ -10,16 +10,16 @@ import Image from "next/image";
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="backdrop-filter backdrop-blur-lg w-full z-10">
+    <nav className="w-full z-0">
       <div className="max-w-7xl border-gray-500 border-b mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
           <Link href={'/'}>
             <div className="flex flex-row items-center space-x-2 mb-2 mt-2">
-              <Image src={"/logos/deeptrack-high-resolution-logo-white.png"} width={200} height={50} alt="Logo" />
-              {/* <span className="text-2xl font-serif font-bold text-white">
+              <Image src={"/deeptrack-favicon.ico"} className="grayscale" width={50} height={50} alt="Logo" />
+              <span className="text-2xl font-serif font-bold text-white">
               DEEPTRACK
-              </span> */}
+              </span>
             </div>
             </Link>
           </div>
