@@ -5,8 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Swiper core styles
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from 'swiper/modules'
-import TestimonialCard from "../cards/testimonialCard";
+import { Navigation, Pagination } from "swiper/modules";
+import TestimonialCard from "../cards/testimonialCard"; // Updated to match the correct path
 
 export const dummyTestimonials = [
   {
@@ -41,9 +41,8 @@ const TestimonialSection = () => {
         alt="Blue Lines"
         width={400}
         height={300}
-        className="absolute -top-50 right-0 -z-10"
+        className="absolute grayscale -top-50 right-0 -z-10"
       />
-
       {/* Swiper Component */}
       <Swiper
         spaceBetween={30}
@@ -56,8 +55,8 @@ const TestimonialSection = () => {
       >
         {dummyTestimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
-            <div className='flex justify-center items-center h-full'>
-            <TestimonialCard testimonial={testimonial} />
+            <div className="flex justify-center items-center h-full">
+              <TestimonialCard testimonial={testimonial} />
             </div>
           </SwiperSlide>
         ))}
