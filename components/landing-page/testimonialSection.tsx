@@ -5,13 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Swiper core styles
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-<<<<<<< HEAD
 import { Navigation, Pagination } from 'swiper/modules';
 import TestimonialCard from "../cards/testimonial-card"; // Updated to match the correct path
-=======
-import { Navigation, Pagination } from 'swiper/modules'
-import TestimonialCard from "../cards/testimonial-card";
->>>>>>> origin/task/2/testimonials-swiper-update
 
 export const dummyTestimonials = [
   {
