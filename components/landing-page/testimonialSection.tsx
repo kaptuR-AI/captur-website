@@ -40,8 +40,9 @@ const TestimonialSection = () => {
         alt="Blue Lines"
         width={400}
         height={300}
-        className="absolute grayscale -top-50 right-0 -z-10"
+        className="absolute -top-50 right-0 -z-10"
       />
+
       {/* Swiper Component */}
       <Swiper
         spaceBetween={30}
@@ -63,4 +64,6 @@ const TestimonialSection = () => {
     </section>
   );
 };
+
 export default TestimonialSection;
+
