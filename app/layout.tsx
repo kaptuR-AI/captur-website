@@ -5,7 +5,7 @@ import { Toaster } from 'sonner'
 import { AOSInit } from "@/components/aos";
 import GoogleAnalytics from "@/components/google-analytics";
 import CookieBanner from "@/components/cookie-banner";
-    
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,20 +33,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scrollbar-thin">
-       <AOSInit />
-       <head>
+    <html lang="en" className="scrollbar-thin overflow-x-hidden">
+      <AOSInit />
+      <head>
         <link rel="icon" type="image/png" href="/logos/deeptrack-high-resolution-logo-white" sizes="32x32" />
-       </head>
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white` }
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
       >
         <GoogleAnalytics
-              GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID!}
-            />
+          GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID!}
+        />
         <main className="font-mono  flex flex-col  space-y-4" >{children} </main>
-      <Toaster />
-      <CookieBanner />
+        <Toaster />
+        <CookieBanner />
       </body>
     </html>
   );

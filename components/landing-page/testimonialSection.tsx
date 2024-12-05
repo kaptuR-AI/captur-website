@@ -5,15 +5,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Swiper core styles
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Pagination } from 'swiper/modules'
+import { Autoplay, Pagination } from 'swiper/modules'
 import TestimonialCard from "../cards/testimonial-card";
 
 export const dummyTestimonials = [
   {
     text: "DeepFake has been a game-changer for our institution. The multi-model verification platform has helped us authenticate digital identities and prevent fraud effectively.",
     imageUrl: "/testimonial-1.svg",
-    name: "John Doe",
-    role: "CEO, Example Bank",
+    name: "Benaiah Wepundi",
+    role: "CEO, PaydHQ",
   },
   {
     text: "I was impressed by the accuracy and reliability of DeepFake's synthetic media detection. It gives us confidence in the digital content we interact with.",
@@ -30,7 +30,7 @@ export const dummyTestimonials = [
 ];
 const TestimonialSection = () => {
   return (
-    <section className="p-4">
+    <section className="px-4 py-20 mx-auto max-w-7xl">
       <h2 className="text-center font-extrabold mb-4 lg:text-4xl sm:text-2xl">
         Voices of Urgency
       </h2>
@@ -40,7 +40,7 @@ const TestimonialSection = () => {
         alt="Blue Lines"
         width={400}
         height={300}
-        className="absolute -top-50 right-0 -z-10 teal-200"
+        className="absolute -top-50 right-0 -z-10 customTeal"
       />
 
       {/* Swiper Component */}
@@ -49,13 +49,17 @@ const TestimonialSection = () => {
         slidesPerView={1}
         loop={true}
         pagination={{ clickable: true }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
         className="testimonial-swiper"
       >
         {dummyTestimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
             <div className='flex justify-center items-center h-full'>
-            <TestimonialCard testimonial={testimonial} />
+              <TestimonialCard testimonial={testimonial} />
             </div>
           </SwiperSlide>
         ))}

@@ -13,9 +13,10 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https:deeptrack.io/api/og?title=DeepTrack",
-        width:1200,
+        width: 1200,
         height: 630,
-      alt: "DeepTrack"      }
+        alt: "DeepTrack"
+      }
     ]
   }
 }
