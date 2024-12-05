@@ -10,24 +10,24 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="w-full z-0">
-      <div className="max-w-7xl border-teal-200 border-b mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl border-gray-500 border-b-[1px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-          <Link href={'/'}>
-            <div className="flex flex-row items-center space-x-2 mb-2 mt-2">
-              <Image src={"/deeptrack-favicon.ico"} className="grayscale" width={50} height={50} alt="Logo" />
-              <span className="text-2xl font-serif font-bold text-white">
-              DEEPTRACK
-              </span>
-            </div>
+            <Link href={'/'}>
+              <div className="flex flex-row items-center space-x-2 mb-2 mt-2">
+                <Image src={"/deeptrack-favicon.ico"} className="grayscale" width={50} height={50} alt="Logo" />
+                <span className="text-2xl font-serif font-bold text-white">
+                  DEEPTRACK
+                </span>
+              </div>
             </Link>
           </div>
           <div className="hidden md:block ">
             <div className="ml-10 flex items-baseline space-x-4">
-             <Navigation />
+              <Navigation />
             </div>
           </div>
-          
+
 
           <div className="-mr-2 flex md:hidden">
             <button
@@ -61,7 +61,7 @@ export function Navbar() {
               href="#"
               className="text-gray-600 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium"
             >
-             Use Cases
+              Use Cases
             </Link>
             <Link
               href="#"
@@ -75,9 +75,9 @@ export function Navbar() {
             >
               Blog & Events
             </Link>
-            
-            
-            </div>        
+
+
+          </div>
         </div>
       )}
     </nav>

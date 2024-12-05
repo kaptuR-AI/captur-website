@@ -12,27 +12,27 @@ import { MoveUpRight } from "lucide-react"
 import { Button } from "../ui/button"
 import WaitlistForm from "./waitlist-form"
 
-export function WaitlistButton() {  
+export function WaitlistButton() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-      <div className='flex mt-2'>
-       <Button className="flex p-4 items-center gap-2 hover:bg-teal-200 bg-white text-black border group" variant={'outline'}>
+        <div className='flex mt-2'>
+          <Button className="flex p-4 items-center gap-2 hover:bg-customTeal bg-white text-black border group" variant={'outline'}>
             Join Our Waitlist
             <MoveUpRight className="w-4 h-4  text-blue transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
-      </Button>
-      </div>
+          </Button>
+        </div>
       </DialogTrigger>
       <DialogContent className="sm:m-2  bg-white text-black">
         <DialogHeader>
           <DialogTitle>Joining our Waitlist</DialogTitle>
           <DialogDescription>
-             Click submit when you&apos;re done.
+            Click submit when you&apos;re done.
           </DialogDescription>
         </DialogHeader>
-       
+
         <WaitlistForm />
-       
+
         <DialogFooter>
         </DialogFooter>
       </DialogContent>

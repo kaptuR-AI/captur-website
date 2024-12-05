@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Linkedin, Twitter } from 'lucide-react';
 
 
 export default function Footer() {
@@ -14,7 +14,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6">Solutions</h3>
             <nav className="flex flex-col space-y-4">
               <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-               Image Authentication
+                Image Authentication
               </Link>
               <Link href="#" className="text-gray-400 hover:text-white transition-colors">
                 Audio Authentication
@@ -63,16 +63,13 @@ export default function Footer() {
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
             © 2024 All Rights Reserved
           </p>
-          
+
           {/* Social Media Icons */}
           <div className="flex space-x-6">
-            <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+            <Link target='_blank' href="https://x.com/deeptrck" className="text-gray-400 hover:text-white transition-colors">
               <Twitter size={20} />
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-              <Instagram size={20} />
-            </Link>
-            <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+            <Link target='_blank' href="https://www.linkedin.com/company/deeptrck/" className="text-gray-400 hover:text-white transition-colors">
               <Linkedin size={20} />
             </Link>
           </div>

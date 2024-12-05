@@ -14,12 +14,12 @@ const solutionData = [
       description: 'Lead the fight against misinformation with advanced tools to identify and thwart campaigns that threaten public discourse. Validate evidence with precision to support informed decision-making and uphold transparency.',
       learnMoreUrl: '#'
     },
-    // {
-    //   id: 3,
-    //   title: 'Media',
-    //   description: 'Maintain trust and credibility by effectively verifying user-generated content. Detect inaccuracies, uphold editorial standards, and ensure your platform remains a reliable source of information for your audience.',
-    //   learnMoreUrl: '#'
-    // }
+    {
+      id: 3,
+      title: 'Media',
+      description: 'Maintain trust and credibility by effectively verifying user-generated content. Detect inaccuracies, uphold editorial standards, and ensure your platform remains a reliable source of information for your audience.',
+      learnMoreUrl: '#'
+    }
   ];
 
 const BuiltForSection = () => {
@@ -28,7 +28,7 @@ const BuiltForSection = () => {
       <h2 className="text-center font-extrabold lg:text-4xl sm:text-2xl mb-20">
         Engineered for What Matters Most.
       </h2>
-      <div className="grid lg:grid-cols-2 sm:grid-col-1 gap-5">
+      <div className="flex flex-wrap gap-10  w-full h-auto justify-center">
         {solutionData.map((solution) => (
           <SolutionCard
             key={solution.id}
@@ -47,7 +47,7 @@ const BuiltForSection = () => {
         />
       </div>
 
-      <div className="flex flex-col mt-5 shrink-0 m-auto w-[675px]">
+      {/* <div className="flex flex-col mt-5 shrink-0 m-auto w-[675px]">
      
           <SolutionCard
             key={3}
@@ -58,7 +58,7 @@ const BuiltForSection = () => {
    
 
         
-      </div>
+      </div> */}
 
     </section>
     )

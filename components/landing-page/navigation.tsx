@@ -15,63 +15,43 @@ import Link from "next/link"
 import Image from "next/image"
 
 const components: { title: string; href: string; description: string }[] = [
-    {
-        title: "Identity Verification",
-        href: "/",
-        description:
-          "Real-time KYC verification and fraud detection during customer onboarding and registration for financial institutions.",
-      },
-      {
-        title: "Transaction Monitoring",
-        href: "/",
-        description:
-          "AI-powered system that detects and prevents fraudulent transactions in real-time, protecting both users and financial institutions.",
-      },
-      {
-        title: "Authentication Score",
-        href: "/",
-        description:
-          "Dynamic trust scoring system that evaluates user authenticity based on multiple verification factors and behavioral patterns.",
-      },
-      {
-        title: "Media Analysis",
-        href: "/",
-        description: "Advanced deepfake detection for images, videos, and audio content to maintain media integrity and trust.",
-      },
-      {
-        title: "Verification Methods",
-        href: "/",
-        description:
-          "Multi-layered authentication options including biometrics, document verification, and behavioral analysis for secure access.",
-      },
-      {
-        title: "Risk Assessment",
-        href: "/",
-        description:
-          "Real-time risk scoring and fraud prevention system that analyzes user behavior, transaction patterns, and authentication factors.",
-      },
+  {
+    title: "Identity Verification",
+    href: "/",
+    description:
+      "Real-time KYC verification and fraud detection during customer onboarding and registration for financial institutions.",
+  },
+  {
+    title: "Transaction Monitoring",
+    href: "/",
+    description:
+      "AI-powered system that detects and prevents fraudulent transactions in real-time, protecting both users and financial institutions.",
+  },
+  {
+    title: "Authentication Score",
+    href: "/",
+    description:
+      "Dynamic trust scoring system that evaluates user authenticity based on multiple verification factors and behavioral patterns.",
+  },
+  {
+    title: "Media Analysis",
+    href: "/",
+    description: "Advanced deepfake detection for images, videos, and audio content to maintain media integrity and trust.",
+  },
+  {
+    title: "Verification Methods",
+    href: "/",
+    description:
+      "Multi-layered authentication options including biometrics, document verification, and behavioral analysis for secure access.",
+  },
+  {
+    title: "Risk Assessment",
+    href: "/",
+    description:
+      "Real-time risk scoring and fraud prevention system that analyzes user behavior, transaction patterns, and authentication factors.",
+  },
 ]
 
-const communityitems: { title: string; href: string; description: string }[] = [
-    {
-        title: "Blogs",
-        href: "/",
-        description:
-          "Discover our content to know more about us.",
-      },
-      {
-        title: "Events",
-        href: "/",
-        description:
-          "Discover our Upcoming webinars.",
-      },
-      {
-        title: "Support",
-        href: "/",
-        description:
-          "Get in touch if you need any help",
-      }
-]
 
 export function Navigation() {
   return (
@@ -87,25 +67,25 @@ export function Navigation() {
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                     
+
                     <div className="mb-2 mt-4 text-lg font-medium">
-                    <Image src={"/logos/deeptrack-high-resolution-logo-black-transparent.png"} width={200} height={50} alt="Logo" />
+                      <Image src={"/logos/deeptrack-high-resolution-logo-black-transparent.png"} width={200} height={50} alt="Logo" />
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                    Use AI to detect deepfakes. DeepTrack is model agnostic
+                      Use AI to detect deepfakes. DeepTrack is model agnostic
                     </p>
                   </Link>
                 </NavigationMenuLink>
               </li>
               <ListItem href="/" title="Image Authentication">
-            Verify image authenticity and detect manipulations using advanced AI analysis.
-            </ListItem>
-            <ListItem href="/" title="Audio Authentication">
-            Detect deepfakes and verify audio recordings with voice analysis technology.
-            </ListItem>
-            <ListItem href="/" title="Text Detection">
-            Identify AI generated content and analyze writing patterns for authenticity.
-            </ListItem>
+                Verify image authenticity and detect manipulations using advanced AI analysis.
+              </ListItem>
+              <ListItem href="/" title="Audio Authentication">
+                Detect deepfakes and verify audio recordings with voice analysis technology.
+              </ListItem>
+              <ListItem href="/" title="Text Detection">
+                Identify AI generated content and analyze writing patterns for authenticity.
+              </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -126,36 +106,18 @@ export function Navigation() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-black text-white">Support</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-              {communityitems.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
+          <Link href="#" legacyBehavior passHref>
+            <NavigationMenuLink className="bg-black text-white ">
+              Support
+            </NavigationMenuLink>
+          </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-black text-white">Blog & Events</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-              {communityitems.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
+          <Link href="#" legacyBehavior passHref>
+            <NavigationMenuLink className="bg-black text-white ">
+              Blog & Events
+            </NavigationMenuLink>
+          </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

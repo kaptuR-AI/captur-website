@@ -10,11 +10,13 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'custom-gradient': 'linear-gradient(to right, #404040 0%, #D7D7D7 37%, #D9D9D9 75%, #404040 100%)',
+				'impact-gradient': 'linear-gradient(to right, #000910 0%, rgba(255, 255, 255, 0.58) 19%, #304251 75%, #32383D 100%)',
+				'card-gradient': 'linear-gradient(to top right, #1E1E1E 5%, #1a252d 100%)'
 			},
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				customTeal: '#54F4FC',
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
