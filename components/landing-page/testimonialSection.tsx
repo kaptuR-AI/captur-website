@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Swiper core styles
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from 'swiper/modules'
+import { Pagination } from 'swiper/modules'
 import TestimonialCard from "../cards/testimonial-card";
 
 export const dummyTestimonials = [
