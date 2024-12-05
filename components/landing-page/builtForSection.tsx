@@ -2,29 +2,29 @@ import Image from "next/image";
 import { SolutionCard } from "../cards/solutionCard";
 
 const solutionData = [
-    {
-      id: 1,
-      title: 'Finance',
-      description: 'Strengthen your organization\'s defenses against financial threats. Seamlessly review flagged transactions and automate KYC (Know Your Customer) processes to detect fraud faster. Generate detailed compliance reports that meet regulatory standards, ensuring trust and security in your operations.',
-      learnMoreUrl: '#'
-    },
-    {
-      id: 2,
-      title: 'Government',
-      description: 'Lead the fight against misinformation with advanced tools to identify and thwart campaigns that threaten public discourse. Validate evidence with precision to support informed decision-making and uphold transparency.',
-      learnMoreUrl: '#'
-    },
-    {
-      id: 3,
-      title: 'Media',
-      description: 'Maintain trust and credibility by effectively verifying user-generated content. Detect inaccuracies, uphold editorial standards, and ensure your platform remains a reliable source of information for your audience.',
-      learnMoreUrl: '#'
-    }
-  ];
+  {
+    id: 1,
+    title: 'Finance',
+    description: 'Strengthen your organization\'s defenses against financial threats. Seamlessly review flagged transactions and automate KYC (Know Your Customer) processes to detect fraud faster. Generate detailed compliance reports that meet regulatory standards, ensuring trust and security in your operations.',
+    learnMoreUrl: '#'
+  },
+  {
+    id: 2,
+    title: 'Government',
+    description: 'Lead the fight against misinformation with advanced tools to identify and thwart campaigns that threaten public discourse. Validate evidence with precision to support informed decision-making and uphold transparency.',
+    learnMoreUrl: '#'
+  },
+  {
+    id: 3,
+    title: 'Media',
+    description: 'Maintain trust and credibility by effectively verifying user-generated content. Detect inaccuracies, uphold editorial standards, and ensure your platform remains a reliable source of information for your audience.',
+    learnMoreUrl: '#'
+  }
+];
 
 const BuiltForSection = () => {
-    return (
-      <section className="py-10 md:w-3/4 md:mx-auto p-4">
+  return (
+    <section className="py-10  max-w-7xl md:mx-auto p-4">
       <h2 className="text-center font-extrabold lg:text-4xl sm:text-2xl mb-20">
         Engineered for What Matters Most.
       </h2>
@@ -61,7 +61,7 @@ const BuiltForSection = () => {
       </div> */}
 
     </section>
-    )
+  )
 }
 
 export default BuiltForSection;
