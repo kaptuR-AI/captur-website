@@ -40,7 +40,7 @@ const TestimonialSection = () => {
         alt="Blue Lines"
         width={400}
         height={300}
-        className="absolute -top-50 right-0 -z-10"
+        className="absolute -top-50 right-0 -z-10 teal-200"
       />
 
       {/* Swiper Component */}
@@ -48,9 +48,8 @@ const TestimonialSection = () => {
         spaceBetween={30}
         slidesPerView={1}
         loop={true}
-        navigation={true}
         pagination={{ clickable: true }}
-        modules={[Navigation, Pagination]}
+        modules={[Pagination]}
         className="testimonial-swiper"
       >
         {dummyTestimonials.map((testimonial, index) => (
