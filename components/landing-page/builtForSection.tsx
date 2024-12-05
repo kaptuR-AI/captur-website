@@ -43,11 +43,11 @@ const BuiltForSection = () => {
           alt="Blue Lines"
           width={400}
           height={300}
-          className="absolute grayscale -z-10 left-0"
+          className="absolute teal-200 -z-10 -left-[150px] rotate-[180deg]"
         />
       </div>
 
-      <div className="flex mt-5 shrink-0 m-auto">
+      <div className="flex flex-col mt-5 shrink-0 m-auto w-[675px]">
      
           <SolutionCard
             key={3}
@@ -57,13 +57,7 @@ const BuiltForSection = () => {
           />
    
 
-        <Image
-          src="/Vector.svg"
-          alt="Blue Lines"
-          width={400}
-          height={300}
-          className="absolute grayscale -z-10 left-0"
-        />
+        
       </div>
 
     </section>
