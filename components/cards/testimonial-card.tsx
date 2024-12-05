@@ -3,8 +3,8 @@ import { Testimonial } from "@/types";
 import Image from "next/image";
 const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }) => {
   return (
-    <div className="p-8 bg-transparent rounded-lg shadow-lg max-w-lg mx-4 w-full">
-      <p className="text-white mb-6 text-lg leading-relaxed">{testimonial.text}</p>
+    <div className="p-8 bg-transparent rounded-lg shadow-lg mx-4 w-full">
+      <p className="text-white text-center mb-6 text-2xl font-light leading-relaxed">{testimonial.text}</p>
       <div className="flex flex-col items-center">
         <Image
           src={testimonial.imageUrl || "/person.jpg"}
