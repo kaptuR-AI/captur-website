@@ -39,7 +39,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/logos/deeptrack-high-resolution-logo-white" sizes="32x32" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white overflow-x-hidden relative`}
       >
         <GoogleAnalytics
           GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID!}

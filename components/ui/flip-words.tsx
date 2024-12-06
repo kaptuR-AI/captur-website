@@ -84,7 +84,7 @@ export const FlipWords = ({
                   delay: wordIndex * 0.3 + letterIndex * 0.05,
                   duration: 0.2,
                 }}
-                className=""
+                className="text-2xl font-semibold"
               >
                 {letter}
               </motion.span>
