@@ -25,10 +25,10 @@ export default function CookieBanner() {
 
   return (
     <div
-      className={`fixed bottom-3 left-0 right-0 bg-white mb-2 text-black space-y-4 rounded-lg shadow-md p-2 m-2 md:p-4 z-50
+      className={`fixed bottom-3 left-0 right-0 bg-white mb-2 text-black rounded-lg shadow-md p-2 md:p-4 z-50
       ${
         cookieConsent != null ? "hidden" : "flex"
-      } justify-center flex-col items-center w-full md:w-[28rem] max-w-xl mx-2 md:mx-auto`}>
+      } justify-center flex-col items-center w-[95%] mx-auto md:w-[28rem] max-w-xl`}>
       <div className='text-center '>
         <Link href='/'>
           <p className='text-black'>

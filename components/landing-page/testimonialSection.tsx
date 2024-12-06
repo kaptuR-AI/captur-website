@@ -30,8 +30,8 @@ export const dummyTestimonials = [
 ];
 const TestimonialSection = () => {
   return (
-    <section className="px-4 py-20 mx-auto max-w-7xl">
-      <h2 className="text-center font-extrabold mb-4 lg:text-4xl sm:text-2xl">
+    <section className="py-20 mx-auto max-w-7xl overflow-hidden md:px-4">
+      <h2 className="text-center text-2xl font-extrabold mb-4 lg:text-4xl ">
         Voices of Urgency
       </h2>
       {/* Decorative Image */}
@@ -40,7 +40,7 @@ const TestimonialSection = () => {
         alt="Blue Lines"
         width={400}
         height={300}
-        className="absolute -top-50 right-0 -z-10 customTeal"
+        className="absolute -right-56 md:right-0 -z-10 customTeal"
       />
 
       {/* Swiper Component */}
