@@ -28,21 +28,9 @@ const components: { title: string; href: string; description: string }[] = [
       "AI-powered system that detects and prevents fraudulent transactions in real-time, protecting both users and financial institutions.",
   },
   {
-    title: "Authentication Score",
-    href: "/",
-    description:
-      "Dynamic trust scoring system that evaluates user authenticity based on multiple verification factors and behavioral patterns.",
-  },
-  {
     title: "Media Analysis",
     href: "/",
     description: "Advanced deepfake detection for images, videos, and audio content to maintain media integrity and trust.",
-  },
-  {
-    title: "Verification Methods",
-    href: "/",
-    description:
-      "Multi-layered authentication options including biometrics, document verification, and behavioral analysis for secure access.",
   },
   {
     title: "Risk Assessment",
@@ -56,7 +44,7 @@ const components: { title: string; href: string; description: string }[] = [
 export function Navigation() {
   return (
     <NavigationMenu>
-      <NavigationMenuList>
+      <NavigationMenuList className="space-x-10">
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-black text-white">Solutions</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -105,14 +93,14 @@ export function Navigation() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="hover:bg-customTeal">
           <Link href="#" legacyBehavior passHref>
             <NavigationMenuLink className="bg-black text-white ">
               Support
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="hover:bg-customTeal">
           <Link href="#" legacyBehavior passHref>
             <NavigationMenuLink className="bg-black text-white ">
               Blog & Events

@@ -23,8 +23,12 @@ export const metadata: Metadata = {
   icons: {
     icon: "/deeptrack-favicon.ico",
   },
+  metadataBase: new URL('https://deeptrack.io/deeptrackOG.png'),
   title: "DeepTrack",
   description: "AI deepfake detector",
+  openGraph: {
+    images: '/deeptrackOG.png',
+  }
 };
 
 export default function RootLayout({
@@ -44,7 +48,7 @@ export default function RootLayout({
         <GoogleAnalytics
           GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID!}
         />
-        <main className="font-mono  flex flex-col  space-y-4" >{children} </main>
+        <main className="flex flex-col  space-y-4" >{children} </main>
         <Toaster />
         <CookieBanner />
       </body>
