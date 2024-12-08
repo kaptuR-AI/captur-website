@@ -8,16 +8,16 @@ const ImpactSection = () => {
             </p>
             <div className="p-7 rounded-3xl h-[30rem] justify-between bg-impact-gradient-up text-white grid lg:grid-cols-3 sm:grid-col-1 md:h-auto md:bg-impact-gradient md:grid-cols-3 gap-4  ">
                 <div className="text-center">
-                    <h2 className="font-extrabold text-6xl">85%+</h2>
-                    <p className="text-sm">Organizations Vulnerable to deepfake</p>
+                    <h2 className="font-extrabold text-5xl mb-2 tracking-wide">85<span>%</span></h2>
+                    <p className="text-sm tracking-wide">Organizations Vulnerable to deepfake</p>
                 </div>
                 <div className="text-center">
-                    <h2 className="font-extrabold text-6xl">$250M</h2>
-                    <p className="text-sm">Estimated Global loss 2024</p>
+                    <h2 className="font-extrabold text-5xl mb-2 tracking-wide">$250<span>M</span></h2>
+                    <p className="text-sm tracking-wide">Estimated Global loss to fraud 2024</p>
                 </div>
                 <div className="text-center">
-                    <h2 className="font-extrabold text-6xl">75%</h2>
-                    <p className="text-sm">African organization report misinformation & Scam</p>
+                    <h2 className="font-extrabold text-5xl mb-2 tracking-wide">75<span>%</span></h2>
+                    <p className="text-sm tracking-wide">African organization report misinformation & Scam</p>
                 </div>
             </div>
         </div>

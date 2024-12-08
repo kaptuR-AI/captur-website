@@ -40,8 +40,10 @@ export const POST = async (request: Request) => {
     });
 
     // 2. Send confirmation email
+
     
-    // 3. Add to mailing list
+    
+    // 3. Add to contact list
 
     return NextResponse.json(
       { 
