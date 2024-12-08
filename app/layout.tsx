@@ -5,7 +5,7 @@ import { Toaster } from 'sonner'
 import { AOSInit } from "@/components/aos";
 import GoogleAnalytics from "@/components/google-analytics";
 import CookieBanner from "@/components/cookie-banner";
-
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -48,6 +48,7 @@ export default function RootLayout({
         <GoogleAnalytics
           GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID!}
         />
+        <GoogleTagManager gtmId={process.env.GA_MEASUREMENT_ID!} />
         <main className="flex flex-col  space-y-4" >{children} </main>
         <Toaster />
         <CookieBanner />
