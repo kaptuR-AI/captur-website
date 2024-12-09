@@ -65,7 +65,7 @@ export function Navigation() {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/" title="Image Authentication">
+              <ListItem href="/image-authentication" title="Image Authentication">
                 Verify image authenticity and detect manipulations using advanced AI analysis.
               </ListItem>
               <ListItem href="/" title="Audio Authentication">
