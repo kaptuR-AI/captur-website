@@ -1,10 +1,21 @@
+'use client'
+
+import { Navbar } from '@/components/landing-page/navbar';
+import FeatureSection from '@/components/layout/featureSection';
 import React from 'react'
 
 const ImageAuthenticationPage = () => {
   return (
-    <div>
-        <h1>Image Authentication Page</h1>
-    </div>
+   <>
+    <Navbar />
+      <FeatureSection 
+      title="Image Authentication"
+      description="Detects everything from subtle edits to full synthetic generation."
+      buttonText="Join Our Waiting List "
+      onButtonClick={() => console.log("Get Started")}
+    />
+    
+   </>
   )
 }
 
