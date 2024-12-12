@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { SolutionCard } from "../cards/solutionCard";
+import Image from 'next/image';
+import { SolutionCard } from '../cards/solutionCard';
 
 const solutionData = [
   {

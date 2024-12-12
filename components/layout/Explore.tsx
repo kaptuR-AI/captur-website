@@ -26,9 +26,9 @@ export default function ExploreSection({
                         <div
                             key={type}
                             className={cn(
-                                "inline-flex items-center justify-center rounded-2xl border border-customTeal bg-gray-900/50 px-6 py-3",
-                                "text-base text-white backdrop-blur-sm transition-colors",
-                                "hover:border-cyan-500/50 hover:bg-gray-900/80"
+                                'inline-flex items-center justify-center rounded-2xl border border-customTeal bg-gray-900/50 px-6 py-3',
+                                'text-base text-white backdrop-blur-sm transition-colors',
+                                'hover:border-cyan-500/50 hover:bg-gray-900/80'
                             )}
                         >
                             {type}

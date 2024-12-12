@@ -1,5 +1,5 @@
-import { IUserStep } from "@/types";
-import Image from "next/image";
+import { IUserStep } from '@/types';
+import Image from 'next/image';
 
 const StepCard: React.FC<{ stepDetails: IUserStep }> = ({ stepDetails }) => {
   return (

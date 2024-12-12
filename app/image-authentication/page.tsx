@@ -19,13 +19,13 @@ const ImageAuthenticationPage = () => {
         title="Image Authentication"
         description="Detects everything from subtle edits to full synthetic generation."
         buttonText="Join Our Waiting List "
-        onButtonClick={() => console.log("Get Started")}
+        onButtonClick={() => console.log('Get Started')}
       />
       <StatsSection
         description="Sophisticated AI-generated image forgeries are becoming increasingly accessible and widespread, posing significant risks across industries. Deeptrack advanced multi-layer detection shields you from deepfake-driven fraud, identity theft, and disinformation."
         statistics={[
-          { value: "85%", description: "of organizations globally are vulnerable to deepfake-enabled fraud" },
-          { value: "75%", description: "of African businesses face rising threats from manipulated images and misinformation" },
+          { value: '85%', description: 'of organizations globally are vulnerable to deepfake-enabled fraud' },
+          { value: '75%', description: 'of African businesses face rising threats from manipulated images and misinformation' },
         ]}
       />
       <Banner
@@ -58,12 +58,12 @@ const ImageAuthenticationPage = () => {
       <div>
         <ExploreSection
           types={[
-            "Face Swap",
-            "AI-Avatar",
-            "Synthetic Faces",
-            "Lip Sync",
-            "AI-Generated Voice",
-            "Face Re-enactment",
+            'Face Swap',
+            'AI-Avatar',
+            'Synthetic Faces',
+            'Lip Sync',
+            'AI-Generated Voice',
+            'Face Re-enactment',
           ]}
         />
         <ExtraSection />
