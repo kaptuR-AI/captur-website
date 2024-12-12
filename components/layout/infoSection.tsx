@@ -29,7 +29,6 @@ const InfoSection = ({ title, description }: InfoSectionProps) => {
                     </p>
                 </div>
             </section>
-            <div className="bg-customTeal max-w-7xl mx-auto mt-4" style={{ height: '1px' }} />
         </>
     );
 };

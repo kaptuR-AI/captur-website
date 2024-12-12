@@ -8,6 +8,7 @@ import Banner from '@/components/layout/Banner';
 import FeatureSection from '@/components/layout/featureSection';
 import StatsSection from '@/components/layout/Statistic';
 import InfoSection from '@/components/layout/infoSection';
+import ExtraSection from '@/components/landing-page/extra-section';
 
 const ImageAuthenticationPage = () => {
   return (
@@ -50,9 +51,10 @@ const ImageAuthenticationPage = () => {
       <InfoSection
         title="Deeptrack Image Authentication"
         description="Deeptrack image authentication leverages advanced multi-layer AI detection to analyze images with precision. Our technology identifies manipulations at the pixel level, detecting techniques such as GAN-based image synthesis, face swapping, and other forms of synthetic media.
-Every image scan delivers actionable insights, including the likelihood of manipulation, helping organizations swiftly identify AI-generated alterations. Deeptrack platform also employs explainable AI, offering clear visualizations and detailed feedback to empower users in combating fraud and disinformation effectively.
-Designed to scale, Deeptrack supports everything from processing a few images to managing billions, ensuring flexibility for businesses of any size. Access our solution through an intuitive web interface or seamlessly integrate it into your workflows via API."
+          Every image scan delivers actionable insights, including the likelihood of manipulation, helping organizations swiftly identify AI-generated alterations. Deeptrack platform also employs explainable AI, offering clear visualizations and detailed feedback to empower users in combating fraud and disinformation effectively.
+          Designed to scale, Deeptrack supports everything from processing a few images to managing billions, ensuring flexibility for businesses of any size. Access our solution through an intuitive web interface or seamlessly integrate it into your workflows via API."
       />
+      <ExtraSection />
       <Footer />
     </div>
   )
