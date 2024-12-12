@@ -9,6 +9,7 @@ import FeatureSection from '@/components/layout/featureSection';
 import StatsSection from '@/components/layout/Statistic';
 import InfoSection from '@/components/layout/infoSection';
 import ExtraSection from '@/components/landing-page/extra-section';
+import ExploreSection from '@/components/layout/Explore';
 
 const ImageAuthenticationPage = () => {
   return (
@@ -54,7 +55,19 @@ const ImageAuthenticationPage = () => {
           Every image scan delivers actionable insights, including the likelihood of manipulation, helping organizations swiftly identify AI-generated alterations. Deeptrack platform also employs explainable AI, offering clear visualizations and detailed feedback to empower users in combating fraud and disinformation effectively.
           Designed to scale, Deeptrack supports everything from processing a few images to managing billions, ensuring flexibility for businesses of any size. Access our solution through an intuitive web interface or seamlessly integrate it into your workflows via API."
       />
-      <ExtraSection />
+      <div>
+        <ExploreSection
+          types={[
+            "Face Swap",
+            "AI-Avatar",
+            "Synthetic Faces",
+            "Lip Sync",
+            "AI-Generated Voice",
+            "Face Re-enactment",
+          ]}
+        />
+        <ExtraSection />
+      </div>
       <Footer />
     </div>
   )
