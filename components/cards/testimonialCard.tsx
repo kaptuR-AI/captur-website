@@ -1,5 +1,5 @@
-import { Testimonial } from "@/types";
-import Image from "next/image";
+import { Testimonial } from '@/types';
+import Image from 'next/image';
 
 const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }) => {
   return (
@@ -7,7 +7,7 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }
       <p className="text-white mb-6 text-lg leading-relaxed">{testimonial.text}</p>
       <div className="flex flex-col items-center">
         <Image
-          src={testimonial.imageUrl || "/person.jpg"}
+          src={testimonial.imageUrl || '/person.jpg'}
           alt="testimonials"
           width={80}
           height={80}

@@ -7,10 +7,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
-import { MoveUpRight } from "lucide-react"
-import { Button } from "../ui/button"
-import WaitlistForm from "./waitlist-form"
+} from '@/components/ui/dialog'
+import { MoveUpRight } from 'lucide-react'
+import { Button } from '../ui/button'
+import WaitlistForm from './waitlist-form'
 
 export function WaitlistButton() {
   return (

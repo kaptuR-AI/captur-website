@@ -1,7 +1,7 @@
-import { stepsData } from "@/data/data";
-import StepCard from "../cards/stepCard";
-import Image from "next/image";
-import Marquee from "react-fast-marquee";
+import { stepsData } from '@/data/data';
+import StepCard from '../cards/stepCard';
+import Image from 'next/image';
+import Marquee from 'react-fast-marquee';
 const StepsSection = () => {
     return (
         <section className=" flex flex-col text-center space-y-4 h-80 my-20">

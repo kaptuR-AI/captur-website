@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from '@/components/ui/button'
 import {
   Sheet,
   SheetClose,
@@ -7,10 +7,10 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet"
-import { ChevronDown, Menu, X } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+} from '@/components/ui/sheet'
+import { ChevronDown, Menu, X } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -18,7 +18,7 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-  } from "@/components/ui/dropdown-menu"
+  } from '@/components/ui/dropdown-menu'
   
 
 export function NavbarSheet() {
@@ -33,7 +33,7 @@ export function NavbarSheet() {
 
         <SheetHeader className="flex flex-row items-center space-x-2 mb-2">
           <SheetTitle className="text-white flex">deeptrack  </SheetTitle>
-          <Image src={"/deeptrack-favicon.ico"} className="grayscale" width={30} height={30} alt="Logo" />
+          <Image src={'/deeptrack-favicon.ico'} className="grayscale" width={30} height={30} alt="Logo" />
         </SheetHeader>
         <hr />
         <div className="flex flex-col space-y-6 mt-6 ">

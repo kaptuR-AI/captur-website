@@ -1,8 +1,8 @@
-"use client"
+'use client'
 
-import * as React from "react"
+import * as React from 'react'
 
-import { cn } from "@/lib/utils"
+import { cn } from '@/lib/utils'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -10,33 +10,33 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger
-} from "@/components/ui/navigation-menu"
-import Link from "next/link"
-import Image from "next/image"
+} from '@/components/ui/navigation-menu'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Identity Verification",
-    href: "/",
+    title: 'Identity Verification',
+    href: '/',
     description:
-      "Real-time KYC verification and fraud detection during customer onboarding and registration for financial institutions.",
+      'Real-time KYC verification and fraud detection during customer onboarding and registration for financial institutions.',
   },
   {
-    title: "Transaction Monitoring",
-    href: "/",
+    title: 'Transaction Monitoring',
+    href: '/',
     description:
-      "AI-powered system that detects and prevents fraudulent transactions in real-time, protecting both users and financial institutions.",
+      'AI-powered system that detects and prevents fraudulent transactions in real-time, protecting both users and financial institutions.',
   },
   {
-    title: "Media Analysis",
-    href: "/",
-    description: "Advanced deepfake detection for images, videos, and audio content to maintain media integrity and trust.",
+    title: 'Media Analysis',
+    href: '/',
+    description: 'Advanced deepfake detection for images, videos, and audio content to maintain media integrity and trust.',
   },
   {
-    title: "Risk Assessment",
-    href: "/",
+    title: 'Risk Assessment',
+    href: '/',
     description:
-      "Real-time risk scoring and fraud prevention system that analyzes user behavior, transaction patterns, and authentication factors.",
+      'Real-time risk scoring and fraud prevention system that analyzes user behavior, transaction patterns, and authentication factors.',
   },
 ]
 
@@ -57,7 +57,7 @@ export function Navigation() {
                   >
 
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      <Image src={"/logos/deeptrack-high-resolution-logo-black-transparent.png"} width={200} height={50} alt="Logo" />
+                      <Image src={'/logos/deeptrack-high-resolution-logo-black-transparent.png'} width={200} height={50} alt="Logo" />
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       Use AI to detect deepfakes. DeepTrack is model agnostic
@@ -113,8 +113,8 @@ export function Navigation() {
 }
 
 const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
+  React.ElementRef<'a'>,
+  React.ComponentPropsWithoutRef<'a'>
 >(({ className, title, children, ...props }, ref) => {
   return (
     <li>
@@ -122,7 +122,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
             className
           )}
           {...props}
@@ -136,4 +136,4 @@ const ListItem = React.forwardRef<
     </li>
   )
 })
-ListItem.displayName = "ListItem"
+ListItem.displayName = 'ListItem'
