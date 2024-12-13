@@ -1,13 +1,13 @@
 'use client'
 
-import ExtraSection from "@/components/landing-page/extra-section"
-import Footer from "@/components/landing-page/footer"
-import { Navbar } from "@/components/landing-page/navbar"
-import Banner from "@/components/layout/Banner"
-import ExploreSection from "@/components/layout/Explore"
-import FeatureSection from "@/components/layout/featureSection"
-import InfoSection from "@/components/layout/infoSection"
-import StatsSection from "@/components/layout/Statistic"
+import ExtraSection from '@/components/landing-page/extra-section'
+import Footer from '@/components/landing-page/footer'
+import { Navbar } from '@/components/landing-page/navbar'
+import Banner from '@/components/layout/Banner'
+import ExploreSection from '@/components/layout/Explore'
+import FeatureSection from '@/components/layout/featureSection'
+import InfoSection from '@/components/layout/infoSection'
+import StatsSection from '@/components/layout/Statistic'
 import Image from 'next/image'
 
 const AudioAuthenticationPage = () => {
