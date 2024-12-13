@@ -18,7 +18,7 @@ export function WaitlistButton() {
       <DialogTrigger asChild>
         <div className='flex mt-2'>
           <Button className="flex p-4 items-center gap-2 hover:bg-customTeal bg-white text-black border group" variant={'outline'}>
-            Join Our Waitlist
+            Book a demo
             <MoveUpRight className="w-4 h-4  text-blue transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
           </Button>
         </div>
