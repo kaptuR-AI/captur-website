@@ -67,7 +67,7 @@ export function NavbarSheet() {
         <SheetFooter className="">
           <SheetClose asChild>
             <Button className="absolute bottom-4">
-              <X />  
+              <X />
                 </Button>
           </SheetClose>
         </SheetFooter>

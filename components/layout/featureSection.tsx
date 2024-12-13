@@ -1,17 +1,13 @@
 import React from 'react'
-import { Button } from '../ui/button'
-import Image from 'next/image'
 import { WaitlistButton } from '../landing-page/waiting-list'
 import FeatureSvg from '../layout/FeatureSvg'
 
 interface FeatureSectionProps {
   title: string
   description: string
-  buttonText: string
-  onButtonClick?: () => void
 }
 
-const FeatureSection = ({ title, description, buttonText, onButtonClick }: FeatureSectionProps) => {
+const FeatureSection = ({ title, description}: FeatureSectionProps) => {
   return (
     <>
       <section className="grid lg:grid-cols-2 gap-6 max-w-7xl mx-auto mt-4 min-h-[50vh] p-4">
