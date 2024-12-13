@@ -41,6 +41,7 @@ export default function RootLayout({
       <AOSInit />
       <head>
         <link rel="icon" type="image/png" href="/logos/deeptrack-high-resolution-logo-white" sizes="32x32" />
+        <meta name="msvalidate.01" content="2160E1BD21CCA207AD7A15AC3E75834F" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white overflow-x-hidden relative`}
