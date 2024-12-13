@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 import { BannerCard } from '../cards/bannerCard';
 
 interface Banner {

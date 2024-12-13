@@ -42,9 +42,9 @@ export function NavbarSheet() {
         <DropdownMenuContent>
             <DropdownMenuLabel>Our Solutions</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem><Link href='#'>Image Authentication</Link></DropdownMenuItem>
-            <DropdownMenuItem><Link href='#'>Audio Authentication</Link></DropdownMenuItem>
-            <DropdownMenuItem><Link href='#'>Text Detection</Link></DropdownMenuItem>
+            <DropdownMenuItem><Link href='/image-authentication'>Image Authentication</Link></DropdownMenuItem>
+            <DropdownMenuItem><Link href='/audio-authentication'>Audio Authentication</Link></DropdownMenuItem>
+            <DropdownMenuItem><Link href='/text-detection'>Text Detection</Link></DropdownMenuItem>
         </DropdownMenuContent>
         </DropdownMenu>
 
@@ -67,7 +67,7 @@ export function NavbarSheet() {
         <SheetFooter className="">
           <SheetClose asChild>
             <Button className="absolute bottom-4">
-              <X />  
+              <X />
                 </Button>
           </SheetClose>
         </SheetFooter>

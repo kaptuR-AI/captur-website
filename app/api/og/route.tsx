@@ -7,7 +7,7 @@ export async function GET(request: Request) {
         const hasTitle = searchParams.has('title')
         const title = hasTitle ? searchParams.get('title')?.slice(0,100): 'DeepTrack'
         // const fontData = await fetch(new URL("../fonts/GeistMonoVF.woff", import.meta.url)).then((res) => res.arrayBuffer())
-        return new ImageResponse( 
+        return new ImageResponse(
             (
                 <div tw="flex flex-col w-full h-full items-center justify-center bg-black text-white">
                 <div tw="flex flex-col bg-black  md:flex-row w-full py-12 px-4 md:items-center justify-between p-8">

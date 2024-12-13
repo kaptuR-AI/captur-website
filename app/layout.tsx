@@ -45,6 +45,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white overflow-x-hidden relative`}
       >
+        <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${process.env.GA_MEASUREMENT_ID!}`}
+          height="0" width="0" style={{display:'none', visibility:'hidden'}}></iframe></noscript>
         <GoogleAnalytics
           GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID!}
         />

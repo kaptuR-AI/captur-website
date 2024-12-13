@@ -1,10 +1,6 @@
-import { ArrowUpRight } from 'lucide-react';
-import { Button } from '../ui/button';
 import {
     Card,
     CardContent,
-    CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from '@/components/ui/card'
@@ -20,7 +16,7 @@ export const BannerCard = ({ icon, title, description }: Banner) => {
     return (
         <Card
             data-aos="fade-up"
-            className="bg-card-gradient flex flex-col justify-center items-center border border-customTeal max-w-[30rem] text-white p-4 rounded-lg shadow-lg"
+            className="bg-card-gradient flex flex-col justify-center items-center border border-customTeal max-w-[30rem] text-white sm:p-4 p-2 rounded-lg shadow-lg"
         >
             <CardHeader className="flex flex-col items-center text-center">
                 <CardTitle className="flex flex-col items-center">
@@ -34,7 +30,7 @@ export const BannerCard = ({ icon, title, description }: Banner) => {
                     <p className="text-2xl py-2 px-5 rounded-md">{title}</p>
                 </CardTitle>
             </CardHeader>
-            <CardContent className="text-center">
+            <CardContent className="text-center p-2 md:p-4">
                 <p>{description}</p>
             </CardContent>
         </Card>

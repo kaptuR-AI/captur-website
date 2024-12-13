@@ -14,6 +14,32 @@ import {
 import Link from 'next/link'
 import Image from 'next/image'
 
+const ListItem = React.forwardRef<
+  React.ElementRef<'a'>,
+  React.ComponentPropsWithoutRef<'a'>
+>(({ className, title, children, ...props }, ref) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
+            className
+          )}
+          {...props}
+        >
+          <div className="text-sm font-medium leading-none">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            {children}
+          </p>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  )
+})
+ListItem.displayName = 'ListItem'
+
 const components: { title: string; href: string; description: string }[] = [
   {
     title: 'Identity Verification',
@@ -68,10 +94,10 @@ export function Navigation() {
               <ListItem href="/image-authentication" title="Image Authentication">
                 Verify image authenticity and detect manipulations using advanced AI analysis.
               </ListItem>
-              <ListItem href="/" title="Audio Authentication">
+              <ListItem href="/audio-authentication" title="Audio Authentication">
                 Detect deepfakes and verify audio recordings with voice analysis technology.
               </ListItem>
-              <ListItem href="/" title="Text Detection">
+              <ListItem href="/text-detection" title="Text Detection">
                 Identify AI generated content and analyze writing patterns for authenticity.
               </ListItem>
             </ul>
@@ -111,29 +137,3 @@ export function Navigation() {
     </NavigationMenu>
   )
 }
-
-const ListItem = React.forwardRef<
-  React.ElementRef<'a'>,
-  React.ComponentPropsWithoutRef<'a'>
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  )
-})
-ListItem.displayName = 'ListItem'

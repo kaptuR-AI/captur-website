@@ -1,5 +1,4 @@
 import React from 'react';
-import { WaitlistButton } from '../landing-page/waiting-list';
 import { cn } from '@/lib/utils';
 
 interface ExploreSectionProps {
@@ -22,7 +21,7 @@ export default function ExploreSection({
 
                 {/* Types */}
                 <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-                    {types.map((type, index) => (
+                    {types.map((type) => (
                         <div
                             key={type}
                             className={cn(
