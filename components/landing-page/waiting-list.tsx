@@ -25,7 +25,7 @@ export function WaitlistButton() {
       </DialogTrigger>
       <DialogContent className="sm:m-2  bg-white text-black">
         <DialogHeader>
-          <DialogTitle>Joining our Waitlist</DialogTitle>
+          <DialogTitle>Book a demo</DialogTitle>
           <DialogDescription>
             Click submit when you&apos;re done.
           </DialogDescription>

@@ -6,7 +6,7 @@ const ImpactSection = () => {
                 and governments from deepfake threats with cutting-edge AI,
                 safeguarding truth, reputation, and informed decisions.&quot;
             </p>
-            <div className="p-7 rounded-3xl h-[30rem] justify-between bg-impact-gradient-up text-white grid lg:grid-cols-3 sm:grid-col-1 md:h-auto md:bg-impact-gradient md:grid-cols-3 gap-4  ">
+            <div className="border border-customTeal p-7 rounded-3xl h-[30rem] justify-between bg-impact-gradient-up text-white grid lg:grid-cols-3 sm:grid-col-1 md:h-auto md:bg-impact-gradient md:grid-cols-3 gap-4  ">
                 <div className="text-center">
                     <h2 className="font-extrabold text-5xl mb-2 tracking-wide">85<span>%</span></h2>
                     <p className="text-sm tracking-wide">Organizations Vulnerable to deepfake</p>
