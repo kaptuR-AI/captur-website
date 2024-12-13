@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og';
+import Image from 'next/image';
 
 export const runtime = 'edge'
 export async function GET(request: Request) {
@@ -25,7 +26,10 @@ export async function GET(request: Request) {
                         <span tw="text-blue-600"> Image,Video and Text .</span>
 
                       </h2> */}
-                      <img src='/deeptrackOG.png' alt=''></img>
+                      <Image
+                      src='/deeptrackOG.png'
+                      alt='Logo image'
+                      />
                       <div tw="mt-8 flex md:mt-0 ">
                         <div tw="flex rounded-md shadow">
                           <a href="https://www.deeptrack.io/" tw="flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-black">Get Started</a>
