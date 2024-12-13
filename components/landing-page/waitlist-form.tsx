@@ -14,9 +14,9 @@ export default function WaitlistForm() {
   const [isValid, setIsValid] = useState(false)
 
   // Email validation regex
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-
   useEffect(() => {
+    // Email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     // Check if both fields are filled and email is valid
     const isEmailValid = emailRegex.test(formData.email)
     setIsValid(formData.name.trim() !== '' && isEmailValid)
