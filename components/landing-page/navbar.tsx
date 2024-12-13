@@ -1,8 +1,8 @@
-import React from "react";
-import Link from "next/link";
-import { Navigation } from "./navigation";
-import Image from "next/image";
-import { NavbarSheet } from "./navbar-sheet";
+import React from 'react';
+import Link from 'next/link';
+import { Navigation } from './navigation';
+import Image from 'next/image';
+import { NavbarSheet } from './navbar-sheet';
 
 export function Navbar() {
   return (
@@ -15,7 +15,7 @@ export function Navbar() {
               <span className="text-2xl text-white">
                   deeptrack
                 </span>
-                <Image src={"/deeptrack-favicon.ico"} className="grayscale" width={30} height={30} alt="Logo" />
+                <Image src={'/deeptrack-favicon.ico'} className="grayscale" width={30} height={30} alt="Logo" />
               </div>
             </Link>
           </div>

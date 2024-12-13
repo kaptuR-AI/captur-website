@@ -1,5 +1,5 @@
-import { db } from "@/lib/db";
-import { NextResponse } from "next/server";
+import { db } from '@/lib/db';
+import { NextResponse } from 'next/server';
 
 export const POST = async (request: Request) => {
   try {
@@ -46,8 +46,8 @@ export const POST = async (request: Request) => {
     // 3. Add to contact list
 
     return NextResponse.json(
-      { 
-        success: true, 
+      {
+        success: true,
         message: 'Successfully joined waitlist',
       },
       { status: 200 }

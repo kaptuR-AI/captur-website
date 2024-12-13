@@ -1,33 +1,33 @@
-"use client";
+'use client';
 
-import { getLocalStorage, setLocalStorage } from "@/lib/storageHelper";
-import Link from "next/link";
+import { getLocalStorage, setLocalStorage } from '@/lib/storageHelper';
+import Link from 'next/link';
 
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export default function CookieBanner() {
   const [cookieConsent, setCookieConsent] = useState(false);
 
   useEffect(() => {
-    const storedCookieConsent = getLocalStorage("cookie_consent", null);
+    const storedCookieConsent = getLocalStorage('cookie_consent', null);
     setCookieConsent(storedCookieConsent);
   }, [setCookieConsent]);
 
   useEffect(() => {
-    const newValue = cookieConsent ? "granted" : "denied";
+    const newValue = cookieConsent ? 'granted' : 'denied';
     
-    window.gtag("consent", "update", {
+    window.gtag('consent', 'update', {
       analytics_storage: newValue,
     });
 
-    setLocalStorage("cookie_consent", cookieConsent);
+    setLocalStorage('cookie_consent', cookieConsent);
   }, [cookieConsent]);
 
   return (
     <div
       className={`fixed bottom-3 left-0 right-0 bg-white mb-2 text-black rounded-lg shadow-md p-2 md:p-4 z-50
       ${
-        cookieConsent != null ? "hidden" : "flex"
+        cookieConsent != null ? 'hidden' : 'flex'
       } justify-center flex-col items-center w-[95%] mx-auto md:w-[28rem] max-w-xl`}>
       <div className='text-center '>
         <Link href='/'>

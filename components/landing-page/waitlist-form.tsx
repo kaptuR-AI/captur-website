@@ -1,7 +1,7 @@
 'use client'
 
 import { FormEvent, useState, useEffect } from 'react'
-import { Input } from "@/components/ui/input"
+import { Input } from '@/components/ui/input'
 import { Button } from '../ui/button'
 import { toast } from 'sonner'
  
@@ -49,29 +49,29 @@ export default function WaitlistForm() {
     } catch (error) {
       console.error(error)
       toast.error('Error adding to Waitlist')
-    } 
+    }
   }
 
   return (
     <form className='flex flex-col space-y-4' onSubmit={onSubmit}>
-      <Input 
-        type="text" 
-        name="name" 
-        className='text-black' 
+      <Input
+        type="text"
+        name="name"
+        className='text-black'
         placeholder='Enter your name'
         value={formData.name}
         onChange={handleInputChange}
       />
-      <Input 
-        className='text-black' 
-        type="email" 
-        name="email" 
+      <Input
+        className='text-black'
+        type="email"
+        name="email"
         placeholder='Enter your email'
         value={formData.email}
         onChange={handleInputChange}
       />
-      <Button 
-        type="submit" 
+      <Button
+        type="submit"
         className="border p-2 rounded-md"
         disabled={!isValid}
       >

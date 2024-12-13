@@ -9,6 +9,9 @@ export default {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				outfit: ['"Outfit"', 'sans-serif'],
+			  },
 			backgroundImage: {
 				'impact-gradient': 'linear-gradient(to right, #000910 0%, rgba(255, 255, 255, 0.58) 19%, #304251 75%, #32383D 100%)',
 				'impact-gradient-up': 'linear-gradient(to top, #000910 0%, rgba(255, 255, 255, 0.58) 19%, #304251 75%, #32383D 100%)',
