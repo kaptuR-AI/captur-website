@@ -16,7 +16,7 @@ export default function Footer() {
               <Link href="/image-authentication" className="text-gray-400 hover:text-white transition-colors">
                 Image Authentication
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="/audio-authentication" className="text-gray-400 hover:text-white transition-colors">
                 Audio Authentication
               </Link>
               <Link href="#" className="text-gray-400 hover:text-white transition-colors">

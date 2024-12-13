@@ -18,6 +18,7 @@ const ImageAuthenticationPage = () => {
       <FeatureSection
         title="Image Authentication"
         description="Detects everything from subtle edits to full synthetic generation."
+        imageSrc='/image-9.svg'
       />
       <StatsSection
         description="Sophisticated AI-generated image forgeries are becoming increasingly accessible and widespread, posing significant risks across industries. Deeptrack advanced multi-layer detection shields you from deepfake-driven fraud, identity theft, and disinformation."
@@ -52,6 +53,7 @@ const ImageAuthenticationPage = () => {
         description="Deeptrack image authentication leverages advanced multi-layer AI detection to analyze images with precision. Our technology identifies manipulations at the pixel level, detecting techniques such as GAN-based image synthesis, face swapping, and other forms of synthetic media.
           Every image scan delivers actionable insights, including the likelihood of manipulation, helping organizations swiftly identify AI-generated alterations. Deeptrack platform also employs explainable AI, offering clear visualizations and detailed feedback to empower users in combating fraud and disinformation effectively.
           Designed to scale, Deeptrack supports everything from processing a few images to managing billions, ensuring flexibility for businesses of any size. Access our solution through an intuitive web interface or seamlessly integrate it into your workflows via API."
+          imageSrc='/authenticate.svg'
       />
       <div>
         <ExploreSection

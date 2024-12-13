@@ -4,9 +4,10 @@ import FeatureSvg from './FeatureSvg';
 interface InfoSectionProps {
     title: string;
     description: string;
+    imageSrc?: string;
 }
 
-const InfoSection = ({ title, description }: InfoSectionProps) => {
+const InfoSection = ({ title, description, imageSrc }: InfoSectionProps) => {
     return (
         <>
             <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl mx-auto mt-4 min-h-[50vh] p-4">
@@ -19,7 +20,7 @@ const InfoSection = ({ title, description }: InfoSectionProps) => {
 
                 {/* Left Section */}
                 <div className="flex flex-col justify-center items-center lg:items-start p-6 text-center lg:text-left">
-                    <FeatureSvg imageSrc="/authenticate.svg" altText="Information section image" />
+                    <FeatureSvg imageSrc={imageSrc} altText="Information section image" />
                 </div>
 
                 {/* Right Section */}

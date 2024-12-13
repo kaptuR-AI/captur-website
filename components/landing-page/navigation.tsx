@@ -94,7 +94,7 @@ export function Navigation() {
               <ListItem href="/image-authentication" title="Image Authentication">
                 Verify image authenticity and detect manipulations using advanced AI analysis.
               </ListItem>
-              <ListItem href="/" title="Audio Authentication">
+              <ListItem href="/audio-authentication" title="Audio Authentication">
                 Detect deepfakes and verify audio recordings with voice analysis technology.
               </ListItem>
               <ListItem href="/" title="Text Detection">

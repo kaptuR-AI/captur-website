@@ -43,7 +43,7 @@ export function NavbarSheet() {
             <DropdownMenuLabel>Our Solutions</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem><Link href='/image-authentication'>Image Authentication</Link></DropdownMenuItem>
-            <DropdownMenuItem><Link href='#'>Audio Authentication</Link></DropdownMenuItem>
+            <DropdownMenuItem><Link href='/audio-authentication'>Audio Authentication</Link></DropdownMenuItem>
             <DropdownMenuItem><Link href='#'>Text Detection</Link></DropdownMenuItem>
         </DropdownMenuContent>
         </DropdownMenu>
