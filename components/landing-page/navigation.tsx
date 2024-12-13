@@ -97,7 +97,7 @@ export function Navigation() {
               <ListItem href="/audio-authentication" title="Audio Authentication">
                 Detect deepfakes and verify audio recordings with voice analysis technology.
               </ListItem>
-              <ListItem href="/" title="Text Detection">
+              <ListItem href="/text-detection" title="Text Detection">
                 Identify AI generated content and analyze writing patterns for authenticity.
               </ListItem>
             </ul>
